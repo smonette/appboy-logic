@@ -11,13 +11,12 @@ $`{{ distance | times: 0.535  | round: 2 }}`
 
 
 ### Test which country
-```
-{% if {{${country}}} == 'GB' %}
+`{% if {{${country}}} == 'GB' %}`
 
-{% if {{${country}}} == 'US' %}
+`{% if {{${country}}} == 'US' %}`
 
-{% if {{${country}}} == 'CA' %}
-```
+`{% if {{${country}}} == 'CA' %}`
+
 
 ### Print user's name, or defualt
 Hello `{{custom_attribute.${Username} | default: 'there'}}`
